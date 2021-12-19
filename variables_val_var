@@ -4,6 +4,10 @@ fun main() {
    var a: Int=123 //is used for storing the data
     val b: Int=100 //is immutable 
     val name: String="Aman Nawal"
+    //name=null would not work as in kotlin the variables are not null by default
+    var name2:String?="Aman Nawal"
+    name2=null;
+    print(name2+"\n")
    
     print("value of a is $a $b $name")
 }
