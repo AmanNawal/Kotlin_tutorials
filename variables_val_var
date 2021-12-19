@@ -1,0 +1,9 @@
+
+
+fun main() {
+   var a: Int=123 //is used for storing the data
+    val b: Int=100 //is immutable 
+    val name: String="Aman Nawal"
+   
+    print("value of a is $a $b $name")
+}
