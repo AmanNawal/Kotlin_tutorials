@@ -1,0 +1,29 @@
+fun main() {
+   var a="priya nawal"
+    if(a.uppercase()=="AMAN NAWAL")
+    {
+        print("the user is aman nawal\n")
+    }
+    else if(a.lowercase().equals("priya nawal"))
+    {
+        print("user is priya\n")
+    }
+    
+    else
+    {
+    print("unknown")    
+    }
+    
+    when(a.lowercase())
+    {
+        "aman nawal"->print("when aman nawal entered the when statement\n")
+    	else->print("I don't know who that is!\n")
+    }
+    val n=when(a.lowercase())
+    {
+        "aman nawal"->print("when aman nawal entered the when statement\n")
+    	else->"I don't know who that is!"
+    }
+    
+    print(n)
+}
