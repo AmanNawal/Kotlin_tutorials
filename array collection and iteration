@@ -1,0 +1,27 @@
+fun main()
+{
+    val arr=arrayOf("Kotlin","Programming","Comin Books")
+    println(arr[0])
+    
+    for(i in arr)  //is like a for each loop
+    {
+        println(i)
+    }
+    
+    arr.forEach(){   //foreach is a function which could be used as a loop
+        println(it)  // it acts a default pointer or iterator
+    }
+	arr.forEach(){ pt->  //add user defined pointervalue(values in the array)
+        println(pt)  
+    }
+    
+    //if we don't want to lose the index
+    arr.forEachIndexed(){  //here we pass index number as well as the pointervalue
+        index,pt-> 
+        println("$pt is at $index")
+        if(index==2)
+        {
+            print("ending")
+        }
+    }
+}
