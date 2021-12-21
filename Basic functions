@@ -1,0 +1,35 @@
+fun practice():String   //string is the return type for this function
+{
+    return "programming in kotlin\n"
+}
+
+//practice funtion could be reduced to
+
+fun prac2()="Aman nawal"   //this a single expression function which is equavalent to practice fun
+
+
+fun nullfun():String?{   //if we want to return null or a data we have to add ?
+    return null
+}
+
+fun parameterized(name:String?,age:Int?):String?
+    {
+        println(age)
+        if(name==null)
+        {
+            return null
+        }
+        
+        return name+" Nawal";
+    }
+    
+
+
+fun main()
+{
+    println(practice()+"\n")
+    println(nullfun()+"\n")
+    println(prac2()+"\n")
+    println(parameterized(null,null)+"\n")
+    
+}
