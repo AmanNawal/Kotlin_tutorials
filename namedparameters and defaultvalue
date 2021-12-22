@@ -1,0 +1,9 @@
+fun greet(g:String,sir:String="NAWAl")=println("hello $g $sir")   //here we used a default parameter
+//in case no value is being passed from the main function
+
+fun main()
+{ 
+   var name:String="Aman"   
+    greet(g=name)  //we are passing a single arugument even though we need two parameters in function
+}
+//if we use named parameters for one variable rest of the parameters should alao be named
