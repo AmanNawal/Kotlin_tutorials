@@ -1,0 +1,25 @@
+fun iterator(list:List<Int>,map:Map<Int,String>){
+	list.forEachIndexed()
+    {
+        index,value->println("$index  $value")
+    }
+    
+    
+    map.forEach()
+    {
+        key,value->println("$key -> $value")
+    }
+    
+}
+
+
+fun main()
+{
+    val list= mutableListOf(1,2,3,4,5,6)
+	list.add(100)
+    
+    val map= mutableMapOf(1 to "Aman",2 to "Nawal",3 to "Priya",4 to "Nothing")
+	map.put(5,"impossibe")
+	
+    iterator(list,map)
+}
