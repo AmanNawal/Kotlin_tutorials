@@ -1,0 +1,11 @@
+fun main()
+{
+    //By default the collection type in kotlin is immutable
+    val map=mapOf("aman" to "Nawal","Abhishek" to "Hatwal","Himanshu" to "pal")
+    map.forEach()
+    {
+       key,value->          //would take two arguments one. key second Value
+        println("$key -> $value")
+    }
+   
+}
