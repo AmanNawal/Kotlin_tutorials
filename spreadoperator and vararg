@@ -1,0 +1,31 @@
+fun iterator(list:List<Int>,vararg map:String) {  //vararg allows us to specify the variable of whatever
+    //type means that even if we are not going to pass anything as argument we would not encounter an error
+	list.forEachIndexed()
+    {
+        index,value->println("$index  $value")
+    }
+    
+    if(!map.isEmpty())
+    {
+    println("map is not empty")
+    map.forEach(){
+        value->println("-> $value")
+    }
+    }
+    else
+    {
+        println("map is empty")
+    }
+    
+}
+
+
+fun main()
+{
+    val list= mutableListOf(1,2,3,4,5,6)
+	list.add(100)
+    
+    val map= arrayOf("Aman","Nawal","Priya","Nothing")
+	
+    iterator(list,*map)   //spread operator
+}
