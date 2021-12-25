@@ -29,3 +29,27 @@ fun main()
 	
     iterator(list,*map)   //spread operator
 }
+
+
+//another example of Vararg
+
+
+open class parent(vararg val name:String)
+
+class child1:parent("Aman Nawal","Priya Nawal")      //if the child class is inheriting a parent 
+//class then the values in the constructor of the parent class would also get passed to the child class 
+//every class inherits a toString function and we can override that function to make it return an string only
+//here we passed the parent constructor values to the child toString values and ade the return to the main function
+{
+    override fun toString():String{
+        return name.joinToString() 
+    }
+}
+
+class child2:parent("Priya nawal","Aman nawal")
+{
+    override fun toString():String
+    {
+        return name.joinToString()
+    }
+}
